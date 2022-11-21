@@ -17,7 +17,7 @@ spring:
             client-id: ${app.config.keycloak.client-id}
             client-secret: ${app.config.keycloak.client-secret}
             provider: keycloak
-            redirect-uri: http://localhost:8080/login/oauth2/code/keycloak
+            redirect-uri: http://192.168.100.55:8080/login/oauth2/code/keycloak
             scope: openid
       resourceserver:
         jwt:
@@ -60,10 +60,10 @@ spring:
 app:
   config:
     keycloak:
-      url: http://localhost:8080/auth
-      realm: javatodev-internet-banking
-      client-secret: 485aaa20-de67-42f4-999a-40ddf6ad2e7d
-      client-id: internet-banking-core-client
+      url: http://192.168.100.55:8080/auth
+      realm: master
+      client-secret: Ef8azBeqTL21t0y1nZYjESldNplDmYrv
+      client-id: microservices
 
 server:
   port: 8082
