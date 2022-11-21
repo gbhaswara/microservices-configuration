@@ -21,7 +21,8 @@ spring:
             scope: openid
       resourceserver:
         jwt:
-          jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
+          issuer-uri : ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
+          ## jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
 
   ## GATEWAY CONFIGURATIONS
   cloud:
