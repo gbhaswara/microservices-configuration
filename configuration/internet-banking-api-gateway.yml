@@ -63,7 +63,7 @@ app:
     keycloak:
       url: http://192.168.100.55:8080/auth
       realm: master
-      client-secret: sjFIwhPk8PIH8IIXHA0XNDyvkor8Wrze
+      client-secret: iFTw31GIzBEXUcyPj2yOEGKW1qBPAHEN
       client-id: microservices
 
 server:
