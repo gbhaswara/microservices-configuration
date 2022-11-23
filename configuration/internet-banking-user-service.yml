@@ -25,7 +25,7 @@ app:
       server-url: http://192.168.100.55:8080/auth
       realm: master
       clientId: internet-banking-core-client
-      client-secret: tD9d2CwYf2IsBkYyq1z4R2hJLdyXrXd5
+      client-secret: EtRek4UpTizvvF0wuPOSfp3uTR5PBunu
   feign:
     client:
       core-banking: core-banking-service
