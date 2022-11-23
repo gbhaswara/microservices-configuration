@@ -13,7 +13,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.100.31:8081/eureka
+      defaultZone: http://localhost:8081/eureka
 
 info:
   app:
@@ -22,7 +22,7 @@ info:
 app:
   config:
     keycloak:
-      server-url: http://192.168.100.55:8080/auth
+      server-url: http://localhost:8080/auth
       realm: master
       clientId: internet-banking-core-client
       client-secret: 6EyI56zSZHIGwGTP3eS8Ca1BIOAvob5Z
