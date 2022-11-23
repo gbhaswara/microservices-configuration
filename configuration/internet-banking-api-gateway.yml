@@ -63,7 +63,7 @@ app:
     keycloak:
       url: http://192.168.100.55:8080/auth
       realm: master
-      client-secret: internet-banking-core-client
+      client-secret: EtRek4UpTizvvF0wuPOSfp3uTR5PBunu
       client-id: internet-banking-core-client
 
 server:
