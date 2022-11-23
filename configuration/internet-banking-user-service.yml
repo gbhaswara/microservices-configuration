@@ -24,8 +24,8 @@ app:
     keycloak:
       server-url: http://192.168.100.55:8080/auth
       realm: master
-      clientId: microservices
-      client-secret: iFTw31GIzBEXUcyPj2yOEGKW1qBPAHEN
+      clientId: internet-banking-core-client
+      client-secret: tD9d2CwYf2IsBkYyq1z4R2hJLdyXrXd5
   feign:
     client:
       core-banking: core-banking-service
