@@ -47,7 +47,7 @@ spring:
            userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,is_verified,picture.width(250).height(250)
       resourceserver:
         jwt:
-          #issuer-uri : ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}
+          issuer-uri : ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}
           jwk-set-uri: ${app.config.keycloak.url}/realms/${app.config.keycloak.realm}/protocol/openid-connect/certs
 
   ## GATEWAY CONFIGURATIONS
