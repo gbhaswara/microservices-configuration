@@ -17,7 +17,7 @@ spring:
             client-id: ${app.config.keycloak.client-id}
             client-secret: ${app.config.keycloak.client-secret}
             provider: keycloak
-            redirect-uri: http://192.168.100.31:8080/login/oauth2/code/keycloak
+            redirect-uri: https://192.168.100.2:8443/login/oauth2/code/keycloak
             scope: openid
 #          google:
 #           clientId: <GOOGLE_CLIENT_ID>
@@ -87,9 +87,9 @@ spring:
 app:
   config:
     keycloak:
-      url: http://192.168.100.31:8080/auth
+      url: https://192.168.100.2:8443/auth
       realm: master
-      client-secret: 6EyI56zSZHIGwGTP3eS8Ca1BIOAvob5Z
+      client-secret: 1e4pQfRKTNEDzwojVnTCDgPabRPbmgFU
       client-id: internet-banking-core-client
 
 server:
@@ -98,11 +98,11 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.100.31:8081/eureka
+      defaultZone: http://192.168.100.2:8081/eureka
     fetch-registry: true
     register-with-eureka: true
   instance:
-    hostname: 192.168.100.31
+    hostname: 192.168.100.2
     prefer-ip-address: true
 
 logging:
