@@ -89,8 +89,8 @@ app:
     keycloak:
       url: https://192.168.100.31:8443/auth
       realm: master
-      client-secret: 1e4pQfRKTNEDzwojVnTCDgPabRPbmgFU
-      client-id: internet-banking-core-client
+      client-secret: NgpGMda1TqjIlkcL6MfgUGZg4jzKkoHM
+      client-id: internet-banking
 
 server:
   port: 8082
