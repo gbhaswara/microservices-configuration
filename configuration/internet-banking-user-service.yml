@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.100.31:3306/banking_core_user_service
-    username: root
+    url: jdbc:postgresql://192.168.100.31:5432/banking_core_user_service
+    username: postgres
     password: P@ssw0rd
   jpa:
     hibernate:
@@ -23,9 +23,9 @@ app:
   config:
     keycloak:
       server-url: http://192.168.100.31:8080/auth
-      realm: master
-      client-secret: NgpGMda1TqjIlkcL6MfgUGZg4jzKkoHM
-      client-id: internet-banking
+      realm: spring-boot
+      client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
+      client-id: microservices-example
 
   feign:
     client:
