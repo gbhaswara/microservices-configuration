@@ -17,7 +17,7 @@ spring:
             client-id: ${app.config.keycloak.client-id}
             client-secret: ${app.config.keycloak.client-secret}
             provider: keycloak
-            redirect-uri: https://192.168.100.31:8443/login/oauth2/code/keycloak
+            redirect-uri: http://192.168.100.31:8180/login/oauth2/code/keycloak
             scope: openid
 #          google:
 #           clientId: <GOOGLE_CLIENT_ID>
@@ -87,10 +87,10 @@ spring:
 app:
   config:
     keycloak:
-      url: https://192.168.100.31:8443/auth
-      realm: master
-      client-secret: NgpGMda1TqjIlkcL6MfgUGZg4jzKkoHM
-      client-id: internet-banking
+      url: http://192.168.100.31:8443/auth
+      realm: spring-boot
+      client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
+      client-id: microservices-example
 
 server:
   port: 8082
