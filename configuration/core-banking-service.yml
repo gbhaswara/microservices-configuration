@@ -1,6 +1,6 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    # driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.100.31:3306/core_banking_service
     username: root
     password: P@ssw0rd
