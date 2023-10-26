@@ -6,7 +6,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
-    database-platform=org: org.hibernate.dialect.PostgreSQLDialect
+    database-platform=org: org.hibernate.dialect.MySQLDialect
 
 server:
   port: 8092
