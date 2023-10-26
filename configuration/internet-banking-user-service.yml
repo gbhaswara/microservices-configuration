@@ -12,6 +12,20 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
+  security:
+    oauth2:
+      client:
+        provider:
+          external:
+            issuer-uri: http://192.168.100.31:8180/realms/spring-boot
+        registration:
+          external:
+            provider: microservice-example
+            client-name:  microservice-example
+            client-id:  microservice-example
+            client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
+            scope: openid,offline_access,profile
+            authorization-grant-type: authorization_code
 
 server:
   port: 8083
