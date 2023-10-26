@@ -5,10 +5,13 @@ spring:
     username: root
     password: P@ssw0rd
   jpa:
+    properties:
+      hibernate:
+        dialect:
+          database-platform=org: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: none
-    database-platform=org: org.hibernate.dialect.MySQLDialect
-
+      
 server:
   port: 8092
 
