@@ -1,9 +1,15 @@
 spring:
   datasource:
-    url: jdbc:postgresql://192.168.100.31:5432/banking_core_user_service
-    username: postgres
+    # driver-class-name: com.mysql.cj.jdbc.Driver
+    # driver-class: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.31:3306/core_banking_service
+    username: root
     password: P@ssw0rd
   jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
 
