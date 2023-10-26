@@ -24,6 +24,9 @@ spring:
             client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
             scope: openid, profile, email, offline_access
             authorization-grant-type: authorization_code
+      resourceserver:
+        jwt:
+          issuer-uri: http://192.168.100.31:8180/realms/spring-boot
 
 server:
   port: 8083
