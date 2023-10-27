@@ -52,14 +52,3 @@ app:
   feign:
     client:
       core-banking: core-banking-service
-
-
-javax:
-  persistence:
-    jdbc.driver: org.mariadb.jdbc.Driver
-    jdbc.url: jdbc:mariadb://192.168.100.31:3306/banking_core_user_service
-
-org:
-  hibernate:
-    dialect:
-      Dialect: org.hibernate.dialect.MariaDB103Dialect
