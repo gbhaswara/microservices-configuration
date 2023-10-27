@@ -28,19 +28,15 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://192.168.100.31:8180/realms/spring-boot
-
 server:
   port: 8083
-
 eureka:
   client:
     service-url:
       defaultZone: http://192.168.100.31:8081/eureka
-
 info:
   app:
     name: ${spring.application.name}
-
 app:
    config:
      keycloak:
@@ -48,7 +44,6 @@ app:
        realm: spring-boot
        client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
        client-id: microservices-example
-
   feign:
     client:
       core-banking: core-banking-service
