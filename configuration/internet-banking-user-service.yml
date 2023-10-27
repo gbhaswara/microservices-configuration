@@ -40,13 +40,13 @@ info:
   app:
     name: ${spring.application.name}
 
-# app:
-#   config:
-#     keycloak:
-#       server-url: http://192.168.100.31:8080/auth
-#       realm: spring-boot
-#       client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
-#       client-id: microservices-example
+app:
+   config:
+     keycloak:
+       server-url: http://192.168.100.31:8080/auth
+       realm: spring-boot
+       client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
+       client-id: microservices-example
 
   feign:
     client:
