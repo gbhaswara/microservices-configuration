@@ -89,8 +89,8 @@ app:
     keycloak:
       url: http://192.168.100.31:8443/auth
       realm: spring-boot
-      client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
-      client-id: microservices-example
+      client-secret: Ko68YHH9w2wEy1JmvrFLq4S8fve53rqh
+      client-id: ms-example
 
 server:
   port: 8082
