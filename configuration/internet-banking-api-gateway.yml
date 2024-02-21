@@ -89,7 +89,7 @@ app:
     keycloak:
       url: http://192.168.100.31:8080/auth
       realm: external
-      client-secret: T5BSrhW5uOZ0gGORHtaqqypmsaKbwjyz
+      client-secret: 3fVwKTV12PLUaze22FkAm1UrVxZJABrB
       client-id: external-client
 
 server:

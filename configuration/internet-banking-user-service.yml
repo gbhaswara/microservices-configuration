@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.100.31:3306/banking_core_user_service
     username: root
-    password: P@ssw0rd
+    password: password
   jpa:
     properties:
       hibernate:
@@ -18,16 +18,16 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://192.168.100.31:8180/realms/spring-boot
+            issuer-uri: http://192.168.100.31:8180/realms/external
         registration:
           oidc:
-            client-id: microservice-example
-            client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
+            client-id: external-client
+            client-secret: 3fVwKTV12PLUaze22FkAm1UrVxZJABrB
             scope: openid, profile, email, offline_access
             authorization-grant-type: authorization_code
       resourceserver:
         jwt:
-          issuer-uri: http://192.168.100.31:8180/realms/spring-boot
+          issuer-uri: http://192.168.100.31:8180/realms/external
 server:
   port: 8083
 eureka:
@@ -41,9 +41,9 @@ app:
   config:
     keycloak:
       server-url: http://192.168.100.31:8080/auth
-      realm: spring-boot
-      client-secret: tKDcaOAHzwSvlJav3SUy1ooeLtD6w47b
-      client-id: microservices-example
+      realm: external
+      client-secret: 3fVwKTV12PLUaze22FkAm1UrVxZJABrB
+      client-id: external-client
   feign:
     client:
       core-banking: core-banking-service
