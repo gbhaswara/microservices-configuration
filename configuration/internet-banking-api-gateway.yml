@@ -120,6 +120,8 @@ management:
     web:
       exposure:
         include: openapi, swagger-ui
+  server:
+    port: 9090        
 
 logging:
   level:
