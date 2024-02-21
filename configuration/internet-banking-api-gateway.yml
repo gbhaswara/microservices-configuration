@@ -87,10 +87,10 @@ spring:
 app:
   config:
     keycloak:
-      url: http://192.168.100.31:8443/auth
-      realm: spring-boot
-      client-secret: Ko68YHH9w2wEy1JmvrFLq4S8fve53rqh
-      client-id: ms-example
+      url: http://192.168.100.31:8080/auth
+      realm: external
+      client-secret: T5BSrhW5uOZ0gGORHtaqqypmsaKbwjyz
+      client-id: external-client
 
 server:
   port: 8082
@@ -104,6 +104,22 @@ eureka:
   instance:
     hostname: 192.168.100.31
     prefer-ip-address: true
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  # /api-docs endpoint custom path
+  api-docs:
+    path: /api-docs
+  show-actuator: true
+  use-management-port: true
+  # This property enables the openapi and swagger-ui endpoints to be exposed beneath the actuator base path.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: openapi, swagger-ui
 
 logging:
   level:

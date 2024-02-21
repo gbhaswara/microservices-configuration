@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.100.31:3306/core_banking_service
     username: root
-    password: P@ssw0rd
+    password: password
   jpa:
     properties:
       hibernate:
@@ -19,6 +19,21 @@ eureka:
   client:
     service-url:
       defaultZone: http://192.168.100.31:8081/eureka
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+# /api-docs endpoint custom path
+  api-docs:
+    path: /api-docs
+  show-actuator: true
+  use-management-port: true
+  # This property enables the openapi and swagger-ui endpoints to be exposed beneath the actuator base path.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: openapi, swagger-ui
 
 info:
   app:
