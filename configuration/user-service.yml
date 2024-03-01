@@ -62,7 +62,7 @@ app:
       server-url: https://localhost:8443/auth
       realm: external
       client-secret: 3fVwKTV12PLUaze22FkAm1UrVxZJABrB
-      client-d: external-client
+      client-id: external-client
   feign:
     client:
       core-banking: core-service
