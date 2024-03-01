@@ -65,4 +65,4 @@ app:
       client-d: external-client
   feign:
     client:
-      core-banking: core-banking-service
+      core-banking: core-service
