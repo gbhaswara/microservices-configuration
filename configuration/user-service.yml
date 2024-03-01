@@ -28,6 +28,11 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:9080/realms/external
+    rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
 server:
   port: 8083
 eureka:
@@ -66,3 +71,7 @@ app:
   feign:
     client:
       core-service: core-service
+  rabbitmq:
+    exchange: user.exchange
+    queue: user.queue
+    routingkey: user.routingkey
