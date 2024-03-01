@@ -18,16 +18,16 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: https://localhost:8443/realms/external
+            issuer-uri: http://localhost:9080/realms/external
         registration:
           oidc:
             client-id: external-client
-            client-secret: bHNZisFO4b93LtCjRF8ztISb5zmOyf9h
+            client-secret: ZXDnuEeRBoEDDF2rpwZyFHeyavqLf95Q
             scope: openid, profile, email, offline_access
             authorization-grant-type: authorization_code
       resourceserver:
         jwt:
-          issuer-uri: https://localhost:8443/realms/external
+          issuer-uri: http://localhost:9080/realms/external
 server:
   port: 8083
 eureka:
@@ -59,7 +59,7 @@ springdoc:
 app:
   config:
     keycloak:
-      server-url: https://localhost:8443/auth
+      server-url: http://localhost:9080/auth
       realm: external
       client-secret: ZXDnuEeRBoEDDF2rpwZyFHeyavqLf95Q
       client-id: external-client
