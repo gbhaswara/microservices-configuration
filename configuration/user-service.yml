@@ -18,7 +18,7 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://192.168.100.31:9080/realms/external
+            issuer-uri: https://localhost:8443/realms/external
         registration:
           oidc:
             client-id: external-client
@@ -59,7 +59,7 @@ springdoc:
 app:
   config:
     keycloak:
-      server-url: http://192.168.100.31:9080/auth
+      server-url: https://localhost:8443/auth
       realm: external
       client-secret: 3fVwKTV12PLUaze22FkAm1UrVxZJABrB
       client-d: external-client
