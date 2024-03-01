@@ -18,11 +18,11 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: https://localhost:8443/realms/external
+            issuer-uri: https://localhost:8443/realms/ms-external
         registration:
           oidc:
             client-id: external-client
-            client-secret: 3fVwKTV12PLUaze22FkAm1UrVxZJABrB
+            client-secret: QqCF8F7EEDs0P3w7oZhpUchpz0h4XXWu
             scope: openid, profile, email, offline_access
             authorization-grant-type: authorization_code
       resourceserver:
