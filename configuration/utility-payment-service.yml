@@ -9,7 +9,12 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    
 eureka:
   client:
     service-url:
@@ -35,3 +40,19 @@ springdoc:
 info:
   app:
     name: ${spring.application.name}
+
+app:
+#  config:
+#    keycloak:
+#      server-url: http://localhost:9080/auth
+#      realm: external
+#      client-secret: ZXDnuEeRBoEDDF2rpwZyFHeyavqLf95Q
+#      client-id: external-client
+#  feign:
+#    client:
+#      core-service: core-service
+  rabbitmq:
+    exchange: microservices.exchange
+    queue: microservices.queue
+    routingkey: microservices.routingkey
+    dynamic: False
