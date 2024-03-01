@@ -88,8 +88,8 @@ app:
   config:
     keycloak:
       url: https://localhost:8443/auth
-      realm: ms-external
-      client-secret: QqCF8F7EEDs0P3w7oZhpUchpz0h4XXWu
+      realm: external
+      client-secret: bHNZisFO4b93LtCjRF8ztISb5zmOyf9h
       client-id: external-client
 
 server:
