@@ -55,29 +55,29 @@ spring:
     gateway:
       routes:
         ## USER SERVICE
-        - id: internet-banking-user-service
-          uri: lb://internet-banking-user-service
+        - id: user-service
+          uri: lb://user-service
           predicates:
             - Path=/user/**
           filters:
             - StripPrefix=1
         ## FUND TRANSFER SERVICE
-        - id: internet-banking-fund-transfer-service
-          uri: lb://internet-banking-fund-transfer-service
+        - id: fund-transfer-service
+          uri: lb://fund-transfer-service
           predicates:
             - Path=/fund-transfer/**
           filters:
             - StripPrefix=1
         ## CORE BANKING SERVICE
-        - id: core-banking-service
-          uri: lb://core-banking-service
+        - id: core-service
+          uri: lb://core-service
           predicates:
             - Path=/banking-core/**
           filters:
             - StripPrefix=1
         ## UTILITY PAYMENTS SERVICE
-        - id: internet-banking-utility-payment-service
-          uri: lb://internet-banking-utility-payment-service
+        - id: utility-payment-service
+          uri: lb://utility-payment-service
           predicates:
             - Path=/utility-payment/**
           filters:
